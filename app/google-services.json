@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "454374300027",
+    "firebase_url": "https://fir-test-cd20c.firebaseio.com",
+    "project_id": "fir-test-cd20c",
+    "storage_bucket": "fir-test-cd20c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454374300027:android:3bf7163e4c4aed9e",
+        "android_client_info": {
+          "package_name": "com.example.tacademy.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454374300027-hfclc9mlev6sie165qbsfch5oeid7b40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXHXU-30IqDuOyWJXbw__OweCncS-h6ik"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
