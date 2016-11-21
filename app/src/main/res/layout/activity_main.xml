@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.tacademy.firebase.MainActivity">
+    tools:context="com.example.anull.firebase.MainActivity">
 
     <ListView
         android:id="@+id/listview"
@@ -29,17 +29,17 @@
             android:inputType="textPersonName" />
 
         <Button
+            android:id="@+id/img_send_btn"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:onClick="onSendImg"
             android:text="이미지전송" />
 
         <Button
+            android:id="@+id/text_send_btn"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:onClick="onChat"
             android:text="전송" />
     </LinearLayout>
 </LinearLayout>

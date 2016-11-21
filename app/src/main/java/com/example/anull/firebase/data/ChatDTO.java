@@ -1,7 +1,7 @@
-package com.example.tacademy.firebase;
+package com.example.anull.firebase.data;
 
 /**
- * 채팅 메시지 구조
+ * Created by Null on 2016-11-21.
  */
 
 public class ChatDTO {

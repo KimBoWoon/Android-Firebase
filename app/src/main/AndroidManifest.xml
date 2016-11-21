@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tacademy.firebase">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    package="com.example.anull.firebase">
 
     <application
         android:allowBackup="true"
@@ -18,19 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- fb messaging start -->
-        <service android:name=".MyFCMListenerService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-        <service android:name=".MyInstanceListenerService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-            </intent-filter>
-        </service>
-        <!-- fb messaging end -->
     </application>
 
 </manifest>

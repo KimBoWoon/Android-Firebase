@@ -1,4 +1,4 @@
-package com.example.tacademy.firebase;
+package com.example.anull.firebase;
 
 import org.junit.Test;
 

@@ -1,4 +1,8 @@
-package com.example.tacademy.firebase;
+package com.example.anull.firebase.data;
+
+/**
+ * Created by Null on 2016-11-21.
+ */
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package com.example.tacademy.firebase;
+package com.example.anull.firebase;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.tacademy.firebase", appContext.getPackageName());
+        assertEquals("com.example.anull.firebase", appContext.getPackageName());
     }
 }
