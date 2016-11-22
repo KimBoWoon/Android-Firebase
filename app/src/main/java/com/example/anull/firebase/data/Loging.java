@@ -2,14 +2,14 @@ package com.example.anull.firebase.data;
 
 import android.util.Log;
 
-import com.example.anull.firebase.MainPresenter;
+import com.example.anull.firebase.main.MainPresenter;
 
 /**
  * Created by Null on 2016-11-21.
  */
 
 public class Loging {
-    static final String TAG = "VideoVillage";
+    static final String TAG = "Firebase";
 
     /**
      * Log Level Error

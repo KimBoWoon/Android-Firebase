@@ -1,4 +1,4 @@
-package com.example.anull.firebase;
+package com.example.anull.firebase.main;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.example.anull.firebase.R;
 import com.example.anull.firebase.data.ChatDTO;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View {

@@ -1,4 +1,4 @@
-package com.example.anull.firebase;
+package com.example.anull.firebase.main;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -21,6 +21,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 import com.google.firebase.storage.FirebaseStorage;
@@ -64,6 +65,7 @@ public class MainPresenter implements MainContract.UserAction {
         initImageLoader();
         initFirebase();
         initStorage();
+        getToken();
     }
 
     @Override
@@ -74,6 +76,14 @@ public class MainPresenter implements MainContract.UserAction {
     @Override
     public void imgSendButtonClicked() {
 
+    }
+
+    private void getToken() {
+        String token = FirebaseInstanceId.getInstance().getToken();
+        if (token != null) {
+            SharedStore.setString((MainActivity) view, "token", token);
+            Loging.i(token);
+        }
     }
 
     public boolean isDebuggable(Context context) {
