@@ -1,4 +1,4 @@
-﻿# Android-Firebase
+# Android-Firebase
 
 ## Android 사용법
 [Firebase Homepage][Firebase]
@@ -16,11 +16,11 @@
 
 ## FCM
 1. 앱 build.gradle에 라이브러리 추가
+[build.gradle][build.gradle]
+[build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
 ```
 compile 'com.google.firebase:firebase-messaging:9.6.1'
 ```
-[build.gradle][build.gradle]
-[build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
 2. 토큰을 얻어오는 서비스를 정의
 [FCMInstanceListenerService][FCMInstanceListenerService]
 [FCMInstanceListenerService]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/fcm/FCMInstanceListenerService.java
