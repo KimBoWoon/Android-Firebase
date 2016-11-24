@@ -65,6 +65,7 @@ public void initRealDatabase() {
     });
 }
 ```
+* 데이터베이스는 사용자에 대해 접근성을 제어 해야한다.
 
 ## Storege
 1. 앱 build.gradle에 라이브러리 추가
@@ -106,6 +107,7 @@ public void initStorage() {
     //imgFileUpload();
 }
 ```
+* 스토리지는 사용자에 대해 접근성을 제어 해야한다.
 
 ## Crash
 1. 앱 build.gradle에 라이브러리 추가
