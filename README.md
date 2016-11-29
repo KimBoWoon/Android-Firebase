@@ -3,17 +3,17 @@
 ## Android 사용법
 [Firebase Homepage][Firebase]
 [Firebase]:https://firebase.google.com/
-* FIrebase 홈페이지에서 프로젝트를 생성한다.
+* Firebase 홈페이지에서 프로젝트를 생성한다.
 * 시키는대로 세 단계만 거치면 됨
 
 ## Database
-1. 앱 build.gradle에 라이브러리 추가
+* 앱 build.gradle에 라이브러리 추가
 [build.gradle][build.gradle]
 [build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
 ```
 com.google.firebase:firebase-database:9.6.1
 ```
-2. 데이터베이스 초기화
+* 데이터베이스 초기화
 [InitDatabase][InitDatabase]
 [InitDatabase]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L170
 ```
@@ -68,13 +68,13 @@ public void initRealDatabase() {
 * 데이터베이스는 사용자에 대해 접근성을 제어 해야한다.
 
 ## Storege
-1. 앱 build.gradle에 라이브러리 추가
+* 앱 build.gradle에 라이브러리 추가
 [build.gradle][build.gradle]
 [build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
 ```
 com.google.firebase:firebase-storage:9.6.1
 ```
-2. 저장소 초기화
+* 저장소 초기화
 [InitSrorege][InitSrorege]
 [InitSrorege]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L216
 ```
@@ -110,7 +110,7 @@ public void initStorage() {
 * 스토리지는 사용자에 대해 접근성을 제어 해야한다.
 
 ## Crash
-1. 앱 build.gradle에 라이브러리 추가
+* 앱 build.gradle에 라이브러리 추가
 [build.gradle][build.gradle]
 [build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
 ```
@@ -121,13 +121,13 @@ com.google.firebase:firebase-crash:9.6.1
 * 어디서 어떻게 죽었는지, 배터리는 얼마나 있었고, 디바이스는 어떤거, 인터넷(LTE or WIFI)을 사용했는지 등등 여러기록들이 남음
 
 ## RemoteConfig
-1. 앱 build.gradle에 라이브러리 추가
+* 앱 build.gradle에 라이브러리 추가
 [build.gradle][build.gradle]
 [build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
 ```
 compile 'com.google.firebase:firebase-config:9.6.1'
 ```
-2. Firebase서버에서 데이터를 가져오기 위한 설정 작업
+* Firebase서버에서 데이터를 가져오기 위한 설정 작업
 [Config][Config]
 [Config]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L119
 ```
@@ -144,7 +144,7 @@ FirebaseRemoteConfigSettings configSettings
 // 3. 설정
 config.setConfigSettings(configSettings);
 ```
-3. 데이터 획득
+* 데이터 획득
 [LoadData][LoadData]
 [LoadData]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L136
 ```
@@ -187,19 +187,19 @@ public void loadRemoteData() {
 [SharedPreferences]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/data/SharedStore.java
 
 ## FCM
-1. 앱 build.gradle에 라이브러리 추가
+* 앱 build.gradle에 라이브러리 추가
 [build.gradle][build.gradle]
 [build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
 ```
 compile 'com.google.firebase:firebase-messaging:9.6.1'
 ```
-2. 토큰을 얻어오는 서비스를 정의
+* 토큰을 얻어오는 서비스를 정의
 [FCMInstanceListenerService][FCMInstanceListenerService]
 [FCMInstanceListenerService]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/fcm/FCMInstanceListenerService.java
-3. 메시지를 수신받는 서비스를 정의
+* 메시지를 수신받는 서비스를 정의
 [FCMListenerService][FCMListenerService]
 [FCMListenerService]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/fcm/FCMListenerService.java
-4. AndroidManifest.xml에 다음과 같은 permission과 service를 정의
+* AndroidManifest.xml에 다음과 같은 permission과 service를 정의
 [AndroidManifest][AndroidManifest]
 [AndroidManifest]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/AndroidManifest.xml
 ```
