@@ -1,21 +1,18 @@
-﻿# Android-Firebase
+# Android-Firebase
 
 ## Android 사용법
-[Firebase Homepage][Firebase]
-[Firebase]:https://firebase.google.com/
+[Firebase](https://firebase.google.com/)
 * Firebase 홈페이지에서 프로젝트를 생성한다.
 * 시키는대로 세 단계만 거치면 됨
 
 ## Database
 * 앱 build.gradle에 라이브러리 추가
-[build.gradle][build.gradle]
-[build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
+[build.gradle](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle)
 ```
 com.google.firebase:firebase-database:9.6.1
 ```
 * 데이터베이스 초기화
-[InitDatabase][InitDatabase]
-[InitDatabase]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L170
+[InitDatabase](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L170)
 ```
 private FirebaseDatabase firebaseDatabase;
 private DatabaseReference databaseReference;
@@ -69,14 +66,12 @@ public void initRealDatabase() {
 
 ## Storege
 * 앱 build.gradle에 라이브러리 추가
-[build.gradle][build.gradle]
-[build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
+[build.gradle](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle)
 ```
 com.google.firebase:firebase-storage:9.6.1
 ```
 * 저장소 초기화
-[InitSrorege][InitSrorege]
-[InitSrorege]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L216
+[InitSrorege](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L216)
 ```
 private FirebaseStorage firebaseStorage;
 private StorageReference storageReference;
@@ -111,8 +106,7 @@ public void initStorage() {
 
 ## Crash
 * 앱 build.gradle에 라이브러리 추가
-[build.gradle][build.gradle]
-[build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
+[build.gradle](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle)
 ```
 com.google.firebase:firebase-crash:9.6.1
 ```
@@ -122,14 +116,12 @@ com.google.firebase:firebase-crash:9.6.1
 
 ## RemoteConfig
 * 앱 build.gradle에 라이브러리 추가
-[build.gradle][build.gradle]
-[build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
+[build.gradle](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle)
 ```
 compile 'com.google.firebase:firebase-config:9.6.1'
 ```
 * Firebase서버에서 데이터를 가져오기 위한 설정 작업
-[Config][Config]
-[Config]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L119
+[Config](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L119)
 ```
 FirebaseRemoteConfig config;
 
@@ -145,8 +137,7 @@ FirebaseRemoteConfigSettings configSettings
 config.setConfigSettings(configSettings);
 ```
 * 데이터 획득
-[LoadData][LoadData]
-[LoadData]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L136
+[LoadData](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/main/MainPresenter.java#L136)
 ```
 public void loadRemoteData() {
     // 리모트로 가져오는 시간
@@ -183,25 +174,20 @@ public void loadRemoteData() {
 }
 ```
 * 네트워크 환경에 따라 데이터를 가져오는 시간이 빠를수도있고 느릴수도있다. 그래서 SharedPreferences를 사용해 디바이스에 저장
-[SharedPreferences][SharedPreferences]
-[SharedPreferences]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/data/SharedStore.java
+[SharedPreferences](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/data/SharedStore.java)
 
 ## FCM
 * 앱 build.gradle에 라이브러리 추가
-[build.gradle][build.gradle]
-[build.gradle]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle
+[build.gradle](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/build.gradle)
 ```
 compile 'com.google.firebase:firebase-messaging:9.6.1'
 ```
 * 토큰을 얻어오는 서비스를 정의
-[FCMInstanceListenerService][FCMInstanceListenerService]
-[FCMInstanceListenerService]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/fcm/FCMInstanceListenerService.java
+[FCMInstanceListenerService](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/fcm/FCMInstanceListenerService.java)
 * 메시지를 수신받는 서비스를 정의
-[FCMListenerService][FCMListenerService]
-[FCMListenerService]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/fcm/FCMListenerService.java
+[FCMListenerService](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/fcm/FCMListenerService.java)
 * AndroidManifest.xml에 다음과 같은 permission과 service를 정의
-[AndroidManifest][AndroidManifest]
-[AndroidManifest]:https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/AndroidManifest.xml
+[AndroidManifest](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/AndroidManifest.xml)
 ```
 <uses-permission android:name="android.permission.INTERNET" />
 
