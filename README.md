@@ -63,6 +63,7 @@ public void initRealDatabase() {
 }
 ```
 * 데이터베이스는 사용자에 대해 접근성을 제어 해야한다.
+* [데이터베이스 어플리케이션](https://github.com/KimBoWoon/Android-Firebase/tree/master/Firebase-Database)
 
 ## Storege
 * 앱 build.gradle에 라이브러리 추가
