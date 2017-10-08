@@ -105,6 +105,7 @@ public void initStorage() {
 }
 ```
 * 스토리지는 사용자에 대해 접근성을 제어 해야한다.
+* [저장소 어플리케이션](https://github.com/KimBoWoon/Android-Firebase/tree/master/Firebase-Storage)
 
 ## Crash
 * 앱 build.gradle에 라이브러리 추가
