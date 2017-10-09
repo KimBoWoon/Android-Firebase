@@ -178,6 +178,7 @@ public void loadRemoteData() {
 ```
 * 네트워크 환경에 따라 데이터를 가져오는 시간이 빠를수도있고 느릴수도있다. 그래서 SharedPreferences를 사용해 디바이스에 저장
 [SharedPreferences](https://github.com/KimBoWoon/Android-Firebase/blob/master/app/src/main/java/com/example/anull/firebase/data/SharedStore.java)
+* [원격 구성 어플리케이션](https://github.com/KimBoWoon/Android-Firebase/tree/master/Firebase-RemoteConfig)
 
 ## FCM
 * 앱 build.gradle에 라이브러리 추가
