@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private void getToken() {
         String token = FirebaseInstanceId.getInstance().getToken();
         if (token != null) {
-//            SharedStore.setString((MainActivity) view, "token", token);
             Log.i("mainActivityToken", token);
         }
     }

@@ -14,7 +14,6 @@ public class FCMInstanceListenerService extends FirebaseInstanceIdService {
     public void onTokenRefresh() {
         super.onTokenRefresh();
         String token = FirebaseInstanceId.getInstance().getToken();
-//        SharedStore.setString(this, "token", token);
         Log.i("FCMToken", token);
     }
 }
