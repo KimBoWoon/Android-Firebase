@@ -18,13 +18,13 @@
 ![Fabric](./images/plugin-install-success.png)
 
 * 로그인이 완료되면 Fabric이 제공하는 다양한 모듀을 클릭 몇 번 으로 간단하게 사용할 수 있습니다. 여기서 Crashlytice를 사용해보겠습니다.
-![Fabric](./images/fabric-menu.png)
+![Fabric](./images/fabric-menu.PNG)
 
 * Crashlytice를 선택하면 다음과 같이 나오며 다양한 정보를 확인할 수 있고 오른쪽 위에 install을 선택하면 설치할 수 있는 메뉴로 이동합니다.
-![Fabric](./images/fabric-crash-menu.png)
+![Fabric](./images/fabric-crash-menu.PNG)
 
 * java와 java + NDK를 사용할 수 있으며 오른쪽 아래 Apply버튼을 누르면 자동으로 코드가 삽입되며 Gradle Sync버튼을 누르면 Gradle Build를 진행합니다.
-![Fabric](./images/fabric-crash-install.png)
+![Fabric](./images/fabric-crash-install.PNG)
 
 * 빌드가 완료되면 [Fabric Dashboard](https://fabric.io/home)에 사용자가 등록한 앱이 나타나며 어떤 에러가 발생했는지 알아볼수 있습니다.
 ![Fabric](./images/fabric-dashboard.png)
