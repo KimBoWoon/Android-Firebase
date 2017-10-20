@@ -14,3 +14,4 @@
 
 ## 주의
 * Firebase 홈페이지에서 ```google-services.json```을 추가해야 정상작동합니다.
+* Firebase에 등록한 어플리케이션과 패키지이름을 맞춰주세요.
